@@ -398,6 +398,71 @@
 
 
     /* ==========================================================
+       APPLIED HUMANITIES
+       ========================================================== */
+
+    .applied {
+      padding: 0;
+    }
+
+    .applied-grid {
+      display: grid;
+      grid-template-columns: 48% 52%;
+      min-height: 690px;
+    }
+
+    .applied-image {
+      min-height: 690px;
+      overflow: hidden;
+    }
+
+    .applied-image img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: 58% center;
+    }
+
+    .applied-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 7vw 7vw 7vw 6vw;
+    }
+
+    .applied-content .section-label {
+      margin-bottom: 30px;
+    }
+
+    .applied-content h3 {
+      max-width: 650px;
+      margin-bottom: 30px;
+    }
+
+    .sentidino-status {
+      margin-bottom: 18px;
+      font-size: 0.68rem;
+      line-height: 1.5;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .sentidino-name {
+      max-width: 650px;
+      margin: 0 0 25px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1.45rem, 2vw, 2.1rem);
+      font-weight: 400;
+      line-height: 1.3;
+    }
+
+    .applied-content p {
+      max-width: 650px;
+    }
+
+
+    /* ==========================================================
        CV
        ========================================================== */
 
@@ -554,6 +619,19 @@
         gap: 0;
       }
 
+      .applied-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .applied-image {
+        min-height: 620px;
+        height: 70vh;
+      }
+
+      .applied-content {
+        padding: 80px 28px;
+      }
+
       .footer {
         padding: 32px 28px 45px;
       }
@@ -598,6 +676,11 @@
       .publication {
         grid-template-columns: 60px 1fr;
         gap: 18px;
+      }
+
+      .applied-image {
+        min-height: 500px;
+        height: 60vh;
       }
 
       .footer {
@@ -653,6 +736,8 @@
       <a href="#publications">Publications</a>
 
       <a href="#teaching">Teaching</a>
+
+      <a href="#applied-humanities">Applied Humanities</a>
 
       <a href="#cv">CV</a>
 
@@ -798,9 +883,7 @@
 
           <div class="research-item">
 
-            <span class="research-number">
-              01
-            </span>
+            <span class="research-number">01</span>
 
             <span class="research-title">
               Comparative &amp; World Literature
@@ -816,9 +899,7 @@
 
           <div class="research-item">
 
-            <span class="research-number">
-              02
-            </span>
+            <span class="research-number">02</span>
 
             <span class="research-title">
               Circulation &amp; Translation
@@ -835,9 +916,7 @@
 
           <div class="research-item">
 
-            <span class="research-number">
-              03
-            </span>
+            <span class="research-number">03</span>
 
             <span class="research-title">
               Small, Minor &amp; Subaltern Literatures
@@ -854,9 +933,7 @@
 
           <div class="research-item">
 
-            <span class="research-number">
-              04
-            </span>
+            <span class="research-number">04</span>
 
             <span class="research-title">
               Literary Geography &amp; Cultural Memory
@@ -873,9 +950,7 @@
 
           <div class="research-item">
 
-            <span class="research-number">
-              05
-            </span>
+            <span class="research-number">05</span>
 
             <span class="research-title">
               Environmental &amp; Applied Humanities
@@ -999,9 +1074,7 @@
 
           <div class="publication">
 
-            <div class="publication-year">
-              2025
-            </div>
+            <div class="publication-year">2025</div>
 
             <div class="publication-content">
 
@@ -1021,9 +1094,7 @@
 
           <div class="publication">
 
-            <div class="publication-year">
-              2025
-            </div>
+            <div class="publication-year">2025</div>
 
             <div class="publication-content">
 
@@ -1044,9 +1115,7 @@
 
           <div class="publication">
 
-            <div class="publication-year">
-              2025
-            </div>
+            <div class="publication-year">2025</div>
 
             <div class="publication-content">
 
@@ -1066,9 +1135,7 @@
 
           <div class="publication">
 
-            <div class="publication-year">
-              2020
-            </div>
+            <div class="publication-year">2020</div>
 
             <div class="publication-content">
 
@@ -1087,9 +1154,7 @@
 
           <div class="publication">
 
-            <div class="publication-year">
-              2017
-            </div>
+            <div class="publication-year">2017</div>
 
             <div class="publication-content">
 
@@ -1111,9 +1176,7 @@
 
           <div class="publication">
 
-            <div class="publication-year">
-              2015
-            </div>
+            <div class="publication-year">2015</div>
 
             <div class="publication-content">
 
@@ -1134,9 +1197,7 @@
 
           <div class="publication">
 
-            <div class="publication-year">
-              2013
-            </div>
+            <div class="publication-year">2013</div>
 
             <div class="publication-content">
 
@@ -1156,9 +1217,7 @@
 
           <div class="publication">
 
-            <div class="publication-year">
-              2010–2016
-            </div>
+            <div class="publication-year">2010–2016</div>
 
             <div class="publication-content">
 
@@ -1280,6 +1339,71 @@
 
 
     <!-- ========================================================
+         APPLIED HUMANITIES
+         ======================================================== -->
+
+    <section class="section applied" id="applied-humanities">
+
+      <div class="applied-grid">
+
+
+        <div class="applied-image">
+
+          <img
+            src="../sentidino.jpg"
+            alt="César Pablo Domínguez Prieto outdoors"
+          >
+
+        </div>
+
+
+        <div class="applied-content">
+
+          <div class="section-label">
+            Applied Humanities
+          </div>
+
+          <h3>
+            From humanistic knowledge to cultural action.
+          </h3>
+
+          <div class="sentidino-status">
+            Currently being established
+          </div>
+
+          <div class="sentidino-name">
+            SENTIDIÑO. Laboratorio de cidadanía cultural e humanidades aplicadas
+          </div>
+
+          <p>
+            SENTIDIÑO is a laboratory for cultural citizenship and applied
+            humanities connecting research, creation and intervention in the
+            territory.
+          </p>
+
+          <p>
+            It works to turn humanistic knowledge into tools for interpreting
+            contemporary problems, activating communities and producing new
+            forms of cultural participation.
+          </p>
+
+          <p>
+            The initiative grows out of a broader understanding of the
+            humanities as a form of situated knowledge: research capable of
+            moving beyond academic spaces and entering into dialogue with
+            territories, institutions and communities.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ========================================================
          CV
          ======================================================== -->
 
@@ -1298,11 +1422,16 @@
         <p class="cv-note">
           A concise public curriculum vitae with academic appointments,
           publications, research projects, invited lectures, teaching and
-          professional service will be available here.
+          professional service.
         </p>
 
-        <a class="cv-link" href="#">
-          Curriculum Vitae
+        <a
+          class="cv-link"
+          href="../Cesar_Dominguez_Public_CV_2026_v2.pdf"
+          target="_blank"
+          rel="noopener"
+        >
+          View Curriculum Vitae
         </a>
 
       </div>
