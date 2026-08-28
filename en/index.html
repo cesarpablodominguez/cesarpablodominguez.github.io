@@ -407,12 +407,12 @@
 
     .applied-grid {
       display: grid;
-      grid-template-columns: 48% 52%;
-      min-height: 690px;
+      grid-template-columns: 39% 61%;
+      min-height: 560px;
     }
 
     .applied-image {
-      min-height: 690px;
+      height: 560px;
       overflow: hidden;
     }
 
@@ -421,27 +421,29 @@
       height: 100%;
       display: block;
       object-fit: cover;
-      object-position: 58% center;
+      object-position: 66% center;
     }
 
     .applied-content {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 7vw 7vw 7vw 6vw;
+      padding: 4.5vw 7vw 4.5vw 6vw;
     }
 
     .applied-content .section-label {
-      margin-bottom: 30px;
+      margin-bottom: 23px;
     }
 
     .applied-content h3 {
-      max-width: 650px;
-      margin-bottom: 30px;
+      max-width: 670px;
+      margin-bottom: 28px;
+      font-size: clamp(2.1rem, 3vw, 3.45rem);
+      line-height: 1.08;
     }
 
     .sentidino-status {
-      margin-bottom: 18px;
+      margin-bottom: 16px;
       font-size: 0.68rem;
       line-height: 1.5;
       letter-spacing: 0.13em;
@@ -449,16 +451,23 @@
     }
 
     .sentidino-name {
-      max-width: 650px;
-      margin: 0 0 25px;
+      max-width: 700px;
+      margin: 0 0 23px;
       font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(1.45rem, 2vw, 2.1rem);
+      font-size: clamp(1.5rem, 2vw, 2.15rem);
       font-weight: 400;
-      line-height: 1.3;
+      line-height: 1.27;
     }
 
     .applied-content p {
-      max-width: 650px;
+      max-width: 720px;
+      margin-bottom: 15px;
+      font-size: 1.02rem;
+      line-height: 1.7;
+    }
+
+    .applied-content p:last-child {
+      margin-bottom: 0;
     }
 
 
@@ -624,12 +633,16 @@
       }
 
       .applied-image {
-        min-height: 620px;
-        height: 70vh;
+        height: 58vh;
+        min-height: 450px;
+      }
+
+      .applied-image img {
+        object-position: 62% center;
       }
 
       .applied-content {
-        padding: 80px 28px;
+        padding: 75px 28px;
       }
 
       .footer {
@@ -679,8 +692,16 @@
       }
 
       .applied-image {
-        min-height: 500px;
-        height: 60vh;
+        height: 52vh;
+        min-height: 390px;
+      }
+
+      .applied-content {
+        padding: 62px 28px 70px;
+      }
+
+      .applied-content h3 {
+        font-size: clamp(2rem, 10vw, 3rem);
       }
 
       .footer {
@@ -1427,7 +1448,7 @@
 
         <a
           class="cv-link"
-          href="../Cesar_Dominguez_Public_CV_2026_v2.pdf"
+          href="../Cesar_Dominguez_Public_CV_2026.pdf"
           target="_blank"
           rel="noopener"
         >
