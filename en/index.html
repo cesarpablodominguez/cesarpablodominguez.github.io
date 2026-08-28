@@ -16,11 +16,9 @@
       box-sizing: border-box;
     }
 
-
     html {
       scroll-behavior: smooth;
     }
-
 
     body {
       margin: 0;
@@ -29,17 +27,14 @@
       font-family: Arial, Helvetica, sans-serif;
     }
 
-
     a {
       color: inherit;
     }
 
 
-
     /* ==========================================================
        HEADER
        ========================================================== */
-
 
     .site-header {
       width: 100%;
@@ -48,14 +43,12 @@
       background: #f7f5f0;
     }
 
-
     .header-top {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
       gap: 30px;
     }
-
 
     .identity h1 {
       margin: 0 0 7px;
@@ -66,7 +59,6 @@
       letter-spacing: -0.02em;
     }
 
-
     .identity p {
       margin: 0;
       font-size: 0.72rem;
@@ -74,7 +66,6 @@
       letter-spacing: 0.12em;
       text-transform: uppercase;
     }
-
 
     .language-switch {
       padding-top: 3px;
@@ -84,22 +75,18 @@
       white-space: nowrap;
     }
 
-
     .language-switch a {
       text-decoration: none;
     }
-
 
     .language-switch a:hover {
       text-decoration: underline;
     }
 
 
-
     /* ==========================================================
        NAVIGATION
        ========================================================== */
-
 
     .main-nav {
       margin-top: 23px;
@@ -108,7 +95,6 @@
       gap: 25px;
     }
 
-
     .main-nav a {
       text-decoration: none;
       font-size: 0.78rem;
@@ -116,17 +102,14 @@
       text-transform: uppercase;
     }
 
-
     .main-nav a:hover {
       text-decoration: underline;
     }
 
 
-
     /* ==========================================================
        HERO
        ========================================================== */
-
 
     .hero {
       display: grid;
@@ -136,14 +119,12 @@
       max-height: 780px;
     }
 
-
     .hero-text {
       display: flex;
       flex-direction: column;
       justify-content: center;
       padding: 5vw 5.2vw 5vw 5.7vw;
     }
-
 
     .hero h2 {
       margin: 0 0 30px;
@@ -155,7 +136,6 @@
       letter-spacing: -0.028em;
     }
 
-
     .hero-intro {
       max-width: 590px;
       margin: 0;
@@ -164,12 +144,10 @@
       line-height: 1.68;
     }
 
-
     .hero-image {
       height: 100%;
       overflow: hidden;
     }
-
 
     .hero-image img {
       width: 100%;
@@ -181,22 +159,18 @@
     }
 
 
-
     /* ==========================================================
        GENERAL SECTIONS
        ========================================================== */
 
-
     .section {
-      padding: 100px 7vw;
+      padding: 105px 7vw;
       border-top: 1px solid #d8d4cc;
     }
-
 
     .section-inner {
       max-width: 1180px;
     }
-
 
     .section-label {
       margin-bottom: 24px;
@@ -204,7 +178,6 @@
       letter-spacing: 0.14em;
       text-transform: uppercase;
     }
-
 
     .section h3 {
       margin: 0 0 34px;
@@ -216,7 +189,6 @@
       letter-spacing: -0.02em;
     }
 
-
     .section p {
       max-width: 790px;
       margin: 0 0 20px;
@@ -226,114 +198,212 @@
     }
 
 
-
     /* ==========================================================
        ABOUT
        ========================================================== */
 
-
-    .about {
-      padding-top: 110px;
-      padding-bottom: 110px;
-    }
-
-
     .about-grid {
       display: grid;
-      grid-template-columns: 27% 73%;
+      grid-template-columns: 24% 76%;
       gap: 7vw;
       max-width: 1180px;
     }
 
-
     .about-heading {
-      padding-top: 3px;
+      padding-top: 4px;
     }
-
 
     .about-heading .section-label {
       margin: 0;
     }
 
-
     .about-content {
-      max-width: 820px;
+      max-width: 840px;
     }
-
 
     .about-content h3 {
       margin-top: 0;
-      max-width: 820px;
     }
-
 
     .about-content p {
-      max-width: 800px;
+      max-width: 820px;
     }
-
 
     .about-content p:last-child {
       margin-bottom: 0;
     }
 
 
-
     /* ==========================================================
        RESEARCH
        ========================================================== */
 
+    .research-intro {
+      max-width: 800px;
+    }
 
     .research-list {
-      margin-top: 46px;
-      max-width: 900px;
+      margin-top: 52px;
+      max-width: 960px;
       border-top: 1px solid #d8d4cc;
     }
 
-
     .research-item {
       display: grid;
-      grid-template-columns: 36px 1fr;
-      gap: 22px;
-      padding: 20px 0;
+      grid-template-columns: 55px 270px 1fr;
+      gap: 25px;
+      padding: 25px 0;
       border-bottom: 1px solid #d8d4cc;
     }
 
-
     .research-number {
-      padding-top: 3px;
-      font-size: 0.7rem;
-      letter-spacing: 0.08em;
+      padding-top: 4px;
+      font-size: 0.68rem;
+      letter-spacing: 0.1em;
     }
 
-
-    .research-item span:last-child {
+    .research-title {
       font-family: Georgia, "Times New Roman", serif;
-      font-size: 1.08rem;
-      line-height: 1.5;
+      font-size: 1.14rem;
+      line-height: 1.45;
     }
 
+    .research-description {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 0.98rem;
+      line-height: 1.65;
+    }
 
 
     /* ==========================================================
-       PLACEHOLDER SECTIONS
+       PROJECTS
        ========================================================== */
 
-
-    .placeholder-text {
-      max-width: 700px;
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0 55px;
+      margin-top: 50px;
+      max-width: 1050px;
+      border-top: 1px solid #d8d4cc;
     }
 
+    .project {
+      padding: 30px 0 35px;
+      border-bottom: 1px solid #d8d4cc;
+    }
+
+    .project-meta {
+      margin-bottom: 13px;
+      font-size: 0.68rem;
+      line-height: 1.5;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .project h4 {
+      margin: 0 0 17px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.55rem;
+      font-weight: 400;
+      line-height: 1.22;
+    }
+
+    .project p {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+
+    /* ==========================================================
+       PUBLICATIONS
+       ========================================================== */
+
+    .publications-intro {
+      max-width: 760px;
+    }
+
+    .publication-list {
+      margin-top: 50px;
+      max-width: 1050px;
+      border-top: 1px solid #d8d4cc;
+    }
+
+    .publication {
+      display: grid;
+      grid-template-columns: 90px 1fr;
+      gap: 28px;
+      padding: 25px 0 27px;
+      border-bottom: 1px solid #d8d4cc;
+    }
+
+    .publication-year {
+      padding-top: 4px;
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+    }
+
+    .publication-content {
+      max-width: 850px;
+    }
+
+    .publication-title {
+      margin-bottom: 7px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.14rem;
+      line-height: 1.5;
+    }
+
+    .publication-title em {
+      font-style: italic;
+    }
+
+    .publication-details {
+      font-size: 0.76rem;
+      line-height: 1.6;
+      letter-spacing: 0.04em;
+    }
+
+
+    /* ==========================================================
+       TEACHING
+       ========================================================== */
+
+    .teaching-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 45px 70px;
+      max-width: 1000px;
+      margin-top: 48px;
+    }
+
+    .teaching-block {
+      border-top: 1px solid #d8d4cc;
+      padding-top: 20px;
+    }
+
+    .teaching-block h4 {
+      margin: 0 0 13px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.25rem;
+      font-weight: 400;
+    }
+
+    .teaching-block p {
+      margin: 0;
+      font-size: 0.98rem;
+      line-height: 1.7;
+    }
 
 
     /* ==========================================================
        CV
        ========================================================== */
 
-
     .cv-note {
       max-width: 760px;
     }
-
 
     .cv-link {
       display: inline-block;
@@ -346,17 +416,45 @@
       text-transform: uppercase;
     }
 
-
     .cv-link:hover {
       opacity: 0.6;
     }
 
 
+    /* ==========================================================
+       CONTACT
+       ========================================================== */
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px 80px;
+      max-width: 900px;
+      margin-top: 45px;
+    }
+
+    .contact-block {
+      border-top: 1px solid #d8d4cc;
+      padding-top: 20px;
+    }
+
+    .contact-label {
+      margin-bottom: 12px;
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .contact-block p {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
 
     /* ==========================================================
        FOOTER
        ========================================================== */
-
 
     .footer {
       display: flex;
@@ -371,31 +469,25 @@
     }
 
 
-
     /* ==========================================================
        TABLET
        ========================================================== */
 
-
     @media (max-width: 900px) {
-
 
       .site-header {
         position: relative;
         padding: 24px 28px 20px;
       }
 
-
       .header-top {
         flex-direction: column;
         gap: 18px;
       }
 
-
       .identity h1 {
         font-size: clamp(1.9rem, 7vw, 2.6rem);
       }
-
 
       .identity p {
         max-width: 520px;
@@ -403,19 +495,16 @@
         line-height: 1.55;
       }
 
-
       .language-switch {
         position: absolute;
         top: 27px;
         right: 28px;
       }
 
-
       .main-nav {
         margin-top: 22px;
         gap: 15px 20px;
       }
-
 
       .hero {
         grid-template-columns: 1fr;
@@ -423,119 +512,103 @@
         max-height: none;
       }
 
-
       .hero-text {
         padding: 70px 28px 60px;
       }
-
 
       .hero h2 {
         font-size: clamp(2.8rem, 10vw, 4.4rem);
       }
 
-
       .hero-intro {
         font-size: 1.05rem;
       }
-
 
       .hero-image {
         height: 65vh;
         min-height: 420px;
       }
 
-
       .section {
-        padding: 75px 28px;
+        padding: 80px 28px;
       }
-
-
-      .about {
-        padding-top: 80px;
-        padding-bottom: 80px;
-      }
-
 
       .about-grid {
         grid-template-columns: 1fr;
         gap: 28px;
       }
 
-
-      .research-list {
-        margin-top: 38px;
+      .research-item {
+        grid-template-columns: 40px 1fr;
+        gap: 20px;
       }
 
+      .research-description {
+        grid-column: 2;
+      }
+
+      .projects-grid,
+      .teaching-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
 
       .footer {
         padding: 32px 28px 45px;
       }
-
     }
-
 
 
     /* ==========================================================
        MOBILE
        ========================================================== */
 
-
     @media (max-width: 560px) {
-
 
       .identity h1 {
         max-width: 280px;
       }
 
-
       .identity p {
         max-width: 300px;
       }
-
 
       .main-nav {
         gap: 13px 18px;
       }
 
-
       .main-nav a {
         font-size: 0.7rem;
       }
-
 
       .hero-text {
         padding-top: 58px;
       }
 
-
       .hero h2 {
         margin-bottom: 25px;
       }
-
 
       .hero-image {
         height: 55vh;
         min-height: 360px;
       }
 
-
-      .research-item {
-        grid-template-columns: 28px 1fr;
-        gap: 15px;
+      .publication {
+        grid-template-columns: 60px 1fr;
+        gap: 18px;
       }
-
 
       .footer {
         flex-direction: column;
         gap: 12px;
       }
-
     }
 
   </style>
 
 </head>
-
 
 
 <body>
@@ -545,12 +618,9 @@
        HEADER
        ========================================================== -->
 
-
   <header class="site-header">
 
-
     <div class="header-top">
-
 
       <div class="identity">
 
@@ -566,14 +636,10 @@
 
 
       <div class="language-switch">
-
         <a href="../gl/">GAL</a> · EN
-
       </div>
 
-
     </div>
-
 
 
     <nav class="main-nav">
@@ -594,7 +660,6 @@
 
     </nav>
 
-
   </header>
 
 
@@ -606,29 +671,22 @@
          HERO
          ======================================================== -->
 
-
     <section class="hero">
 
-
       <div class="hero-text">
-
 
         <h2>
           Comparative literature across languages, cultures and worlds.
         </h2>
 
-
         <p class="hero-intro">
           I am Professor of Comparative Literature at the University of
-          Santiago de Compostela. My research focuses on comparative and world
-          literature, translation, cultural memory and the environmental
-          humanities, with a particular interest in the ways literature moves
-          across languages, territories and media.
+          Santiago de Compostela and Honorary Research Fellow at the University
+          of Glasgow. My work explores how literature moves across languages,
+          cultures, territories and historical periods.
         </p>
 
-
       </div>
-
 
 
       <div class="hero-image">
@@ -640,7 +698,6 @@
 
       </div>
 
-
     </section>
 
 
@@ -649,12 +706,9 @@
          ABOUT
          ======================================================== -->
 
-
-    <section class="section about" id="about">
-
+    <section class="section" id="about">
 
       <div class="about-grid">
-
 
         <div class="about-heading">
 
@@ -665,59 +719,51 @@
         </div>
 
 
-
         <div class="about-content">
-
 
           <h3>
             Literature as a way of thinking across borders.
           </h3>
 
-
           <p>
             I am Professor of Comparative Literature at the University of
-            Santiago de Compostela, where my work has developed at the
-            intersection of comparative literature, world literature and
+            Santiago de Compostela and Honorary Research Fellow at the
+            University of Glasgow. My academic work has developed across
+            comparative literature, world literature, literary history and
             translation studies.
           </p>
 
-
           <p>
-            My research is concerned with the movement of texts between
-            languages, cultures and literary systems, and with the forms of
-            mediation that make those movements possible. This has led me to
-            work on literary circulation, translation, cultural memory,
-            postcolonial questions and the changing geographies of world
-            literature.
+            A central question throughout my research has been how literature
+            travels: between languages and literary systems, across geographical
+            and political borders, and through institutions, markets,
+            translations and other forms of mediation. This interest has led me
+            from comparative literary history and literary geography to the
+            study of world literature, circulation, small and minor literatures,
+            translation and transnational cultural relations.
           </p>
 
-
           <p>
-            In recent years, I have increasingly explored the environmental,
-            spatial and public dimensions of literary research. My current
-            interests include literary cartography, relations between
-            literature and territory, environmental humanities and forms of
-            applied humanities that bring scholarship into dialogue with
-            cultural institutions, digital environments and local communities.
+            My more recent work brings these questions into dialogue with
+            environmental and Anthropocene humanities. I am particularly
+            interested in the material and ecological conditions of literary
+            circulation, in relationships between literature and territory, and
+            in ways of extending literary research beyond conventional academic
+            forms through cartography, digital methods and public humanities.
           </p>
 
-
           <p>
-            My academic work has been shaped by sustained international
-            collaboration. I have held visiting and research positions at the
-            University of Glasgow and participate in international institutions
-            and networks devoted to comparative literature, world literature
-            and literary history, including Academia Europaea, the Harvard
-            Institute for World Literature and the Stockholm Collegium of World
-            Literary History.
+            My work has been shaped by sustained international teaching and
+            research, including appointments and activities in the United
+            Kingdom, China, the United States and continental Europe. I am a
+            member of Academia Europaea, a Fellow of the Stockholm Collegium of
+            World Literary History, and a member of the Board of the Harvard
+            Institute for World Literature.
           </p>
-
 
         </div>
 
-
       </div>
-
 
     </section>
 
@@ -727,29 +773,23 @@
          RESEARCH
          ======================================================== -->
 
-
     <section class="section" id="research">
 
-
       <div class="section-inner">
-
 
         <div class="section-label">
           Research
         </div>
 
-
         <h3>
-          Comparative research across texts, territories and cultural systems.
+          Relations, circulation, scale and the environments of literature.
         </h3>
 
-
-        <p>
-          My work combines comparative literary analysis with questions of
-          circulation, mediation, translation and space. Rather than treating
-          literature as a collection of self-contained national traditions, I
-          am interested in the relations through which texts acquire meaning,
-          mobility and new cultural lives.
+        <p class="research-intro">
+          My research approaches literature relationally: as something produced
+          not only by texts and authors, but also by translation, circulation,
+          institutions, geography, historical scale and material environments.
+          Five interconnected areas currently structure this work.
         </p>
 
 
@@ -758,10 +798,17 @@
 
           <div class="research-item">
 
-            <span class="research-number">01</span>
+            <span class="research-number">
+              01
+            </span>
 
-            <span>
-              Comparative Literature and World Literature
+            <span class="research-title">
+              Comparative &amp; World Literature
+            </span>
+
+            <span class="research-description">
+              Comparative method, world literature, literary history and the
+              changing scales through which literary relations are described.
             </span>
 
           </div>
@@ -769,10 +816,18 @@
 
           <div class="research-item">
 
-            <span class="research-number">02</span>
+            <span class="research-number">
+              02
+            </span>
 
-            <span>
-              Translation, circulation and literary mediation
+            <span class="research-title">
+              Circulation &amp; Translation
+            </span>
+
+            <span class="research-description">
+              The movement of texts across languages and markets, translation
+              as mediation, and the agents and institutions that enable or
+              constrain literary mobility.
             </span>
 
           </div>
@@ -780,10 +835,18 @@
 
           <div class="research-item">
 
-            <span class="research-number">03</span>
+            <span class="research-number">
+              03
+            </span>
 
-            <span>
-              Cultural memory and postcolonial studies
+            <span class="research-title">
+              Small, Minor &amp; Subaltern Literatures
+            </span>
+
+            <span class="research-description">
+              Literary asymmetry, minorisation, cultural centres and
+              peripheries, and the ways smaller literary systems enter
+              transnational and world-literary spaces.
             </span>
 
           </div>
@@ -791,10 +854,18 @@
 
           <div class="research-item">
 
-            <span class="research-number">04</span>
+            <span class="research-number">
+              04
+            </span>
 
-            <span>
-              Environmental and Anthropocene Humanities
+            <span class="research-title">
+              Literary Geography &amp; Cultural Memory
+            </span>
+
+            <span class="research-description">
+              Literature and space, comparative literary cartography,
+              territorial imaginaries, migration, memory and the cultural
+              construction of place.
             </span>
 
           </div>
@@ -802,10 +873,18 @@
 
           <div class="research-item">
 
-            <span class="research-number">05</span>
+            <span class="research-number">
+              05
+            </span>
 
-            <span>
-              Literary cartography, digital methods and applied humanities
+            <span class="research-title">
+              Environmental &amp; Applied Humanities
+            </span>
+
+            <span class="research-description">
+              Environmental comparative literature, Anthropocene humanities,
+              ecological approaches to literary circulation, and experimental
+              forms of digital and public-facing humanities research.
             </span>
 
           </div>
@@ -813,9 +892,7 @@
 
         </div>
 
-
       </div>
-
 
     </section>
 
@@ -825,33 +902,70 @@
          PROJECTS
          ======================================================== -->
 
-
     <section class="section" id="projects">
 
-
       <div class="section-inner">
-
 
         <div class="section-label">
           Projects
         </div>
 
-
         <h3>
-          Current research and applied humanities projects.
+          Current research projects.
         </h3>
 
-
-        <p class="placeholder-text">
-          This section will present current individual and collaborative
-          projects, including work on world literature, magical realism,
-          literary cartography, cultural memory and experimental forms of
-          public-facing humanities research.
+        <p>
+          My current projects combine comparative literary research with
+          questions of cultural circulation, cognition, ageing, territory and
+          public engagement.
         </p>
 
 
-      </div>
+        <div class="projects-grid">
 
+
+          <article class="project">
+
+            <div class="project-meta">
+              2025–2029 · Principal Investigator
+            </div>
+
+            <h4>
+              IBERMAGIC21
+            </h4>
+
+            <p>
+              <em>Iberian Magical Realism in the 21st Century: Comparative and
+              Cognitive Analysis of a Postsecular Narrative.</em> A research
+              project on contemporary Iberian magical realism combining
+              comparative and cognitive approaches.
+            </p>
+
+          </article>
+
+
+          <article class="project">
+
+            <div class="project-meta">
+              2026 · Project Leader
+            </div>
+
+            <h4>
+              NARRAGE
+            </h4>
+
+            <p>
+              <em>Reading Age across Borders: Literary Narratives and Lived
+              Experience in Later Life.</em> A collaborative project supported
+              by the EUniWell Seed Funding Programme.
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
 
     </section>
 
@@ -861,32 +975,212 @@
          PUBLICATIONS
          ======================================================== -->
 
-
     <section class="section" id="publications">
-
 
       <div class="section-inner">
 
-
         <div class="section-label">
-          Publications
+          Selected Publications
         </div>
 
-
         <h3>
-          Books, edited volumes and selected publications.
+          Books and selected work.
         </h3>
 
-
-        <p class="placeholder-text">
-          A selected bibliography will be presented here, together with links
-          to full bibliographic records and, where available, open-access or
-          digital versions.
+        <p class="publications-intro">
+          A selection of publications reflecting the development of my work in
+          comparative literature, world literature, literary history,
+          translation and environmental humanities.
         </p>
 
 
-      </div>
+        <div class="publication-list">
 
+
+          <div class="publication">
+
+            <div class="publication-year">
+              2025
+            </div>
+
+            <div class="publication-content">
+
+              <div class="publication-title">
+                <em>Mapas da literatura mundo: ética, circulação e futuros
+                planetários.</em>
+              </div>
+
+              <div class="publication-details">
+                Edições Makunaima
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="publication">
+
+            <div class="publication-year">
+              2025
+            </div>
+
+            <div class="publication-content">
+
+              <div class="publication-title">
+                “Environmental Comparative Literature.”
+              </div>
+
+              <div class="publication-details">
+                In <em>The Routledge Companion to Global Comparative
+                Literature</em>, edited by Zhang Longxi and Omid Azadibougar,
+                Routledge, pp. 322–332.
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="publication">
+
+            <div class="publication-year">
+              2025
+            </div>
+
+            <div class="publication-content">
+
+              <div class="publication-title">
+                “Under the Sea in the Age of the Meteorocene: Towards a New
+                Constitution.”
+              </div>
+
+              <div class="publication-details">
+                <em>Paragraph</em> 48.3, pp. 275–296.
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="publication">
+
+            <div class="publication-year">
+              2020
+            </div>
+
+            <div class="publication-content">
+
+              <div class="publication-title">
+                “In 1837/1838: World Literature and Law.”
+              </div>
+
+              <div class="publication-details">
+                <em>Critical Inquiry</em> 47.1, pp. 28–48.
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="publication">
+
+            <div class="publication-year">
+              2017
+            </div>
+
+            <div class="publication-content">
+
+              <div class="publication-title">
+                <em>Futures of Comparative Literature: ACLA State of the
+                Discipline Report.</em>
+              </div>
+
+              <div class="publication-details">
+                Routledge. Co-edited with Ursula K. Heise, Dudley Andrew,
+                Alexander Beecroft, Jessica Berman, David Damrosch,
+                Guillermina De Ferrari, Barbara Harlow and Eric Hayot.
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="publication">
+
+            <div class="publication-year">
+              2015
+            </div>
+
+            <div class="publication-content">
+
+              <div class="publication-title">
+                <em>Introducing Comparative Literature: New Trends and
+                Applications.</em>
+              </div>
+
+              <div class="publication-details">
+                Routledge. With Haun Saussy and Darío Villanueva. Translated
+                into Spanish, Arabic, Farsi, Turkish and Chinese.
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="publication">
+
+            <div class="publication-year">
+              2013
+            </div>
+
+            <div class="publication-content">
+
+              <div class="publication-title">
+                <em>World Literature: A Reader.</em>
+              </div>
+
+              <div class="publication-details">
+                Routledge. Co-edited with Theo D'haen and Mads Rosendahl
+                Thomsen.
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="publication">
+
+            <div class="publication-year">
+              2010–2016
+            </div>
+
+            <div class="publication-content">
+
+              <div class="publication-title">
+                <em>A Comparative History of Literatures in the Iberian
+                Peninsula.</em>
+              </div>
+
+              <div class="publication-details">
+                John Benjamins. Two volumes, co-edited with Fernando Cabo
+                Aseguinolaza and Anxo Abuín González (vol. 1), and with Anxo
+                Abuín González and Ellen Sapega (vol. 2).
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
 
     </section>
 
@@ -896,32 +1190,90 @@
          TEACHING
          ======================================================== -->
 
-
     <section class="section" id="teaching">
 
-
       <div class="section-inner">
-
 
         <div class="section-label">
           Teaching
         </div>
 
-
         <h3>
-          Comparative literature as a practice of reading relationally.
+          Comparative literature across institutions, languages and scales.
         </h3>
 
-
-        <p class="placeholder-text">
-          This section will present current teaching, programme responsibilities
-          and selected work in literary theory, comparative literature and
-          postgraduate education.
+        <p>
+          I teach comparative literature, world literature, literary theory,
+          translation and environmental approaches to literature at
+          undergraduate and postgraduate levels.
         </p>
 
 
-      </div>
+        <div class="teaching-grid">
 
+
+          <div class="teaching-block">
+
+            <h4>
+              Universidade de Santiago de Compostela
+            </h4>
+
+            <p>
+              Comparative literature, literary theory, world literature,
+              ecocriticism, translation, magical realism and research methods.
+            </p>
+
+          </div>
+
+
+          <div class="teaching-block">
+
+            <h4>
+              University of Glasgow
+            </h4>
+
+            <p>
+              Comparative literature, translation studies, ecocriticism,
+              animal studies and global/planetary approaches.
+            </p>
+
+          </div>
+
+
+          <div class="teaching-block">
+
+            <h4>
+              International Teaching
+            </h4>
+
+            <p>
+              Courses and seminars at Sichuan University, Shanghai
+              International Studies University, the University of
+              Wisconsin–Madison, CUNY Graduate Center, Aarhus University and
+              Université de Bourgogne.
+            </p>
+
+          </div>
+
+
+          <div class="teaching-block">
+
+            <h4>
+              Graduate Supervision
+            </h4>
+
+            <p>
+              Supervision of MA and doctoral research in comparative
+              literature, world literature, translation, cultural studies and
+              related fields.
+            </p>
+
+          </div>
+
+
+        </div>
+
+      </div>
 
     </section>
 
@@ -931,37 +1283,29 @@
          CV
          ======================================================== -->
 
-
     <section class="section" id="cv">
 
-
       <div class="section-inner">
-
 
         <div class="section-label">
           Curriculum Vitae
         </div>
 
-
         <h3>
-          Academic positions, research, publications and professional service.
+          Academic career and professional activity.
         </h3>
 
-
         <p class="cv-note">
-          A downloadable academic CV and a concise overview of appointments,
-          visiting positions, research activities and international academic
-          service will be available here.
+          A concise public curriculum vitae with academic appointments,
+          publications, research projects, invited lectures, teaching and
+          professional service will be available here.
         </p>
-
 
         <a class="cv-link" href="#">
           Curriculum Vitae
         </a>
 
-
       </div>
-
 
     </section>
 
@@ -971,30 +1315,80 @@
          CONTACT
          ======================================================== -->
 
-
     <section class="section" id="contact">
 
-
       <div class="section-inner">
-
 
         <div class="section-label">
           Contact
         </div>
 
-
         <h3>
-          Academic contact and institutional affiliations.
+          Academic contact.
         </h3>
 
 
-        <p class="placeholder-text">
-          Universidade de Santiago de Compostela
-        </p>
+        <div class="contact-grid">
 
+
+          <div class="contact-block">
+
+            <div class="contact-label">
+              University
+            </div>
+
+            <p>
+              Universidade de Santiago de Compostela<br>
+              Santiago de Compostela, Spain
+            </p>
+
+          </div>
+
+
+          <div class="contact-block">
+
+            <div class="contact-label">
+              E-mail
+            </div>
+
+            <p>
+              cesar.dominguez[at]usc.gal
+            </p>
+
+          </div>
+
+
+          <div class="contact-block">
+
+            <div class="contact-label">
+              Affiliation
+            </div>
+
+            <p>
+              Professor of Comparative Literature<br>
+              Universidade de Santiago de Compostela
+            </p>
+
+          </div>
+
+
+          <div class="contact-block">
+
+            <div class="contact-label">
+              Research Affiliation
+            </div>
+
+            <p>
+              Honorary Research Fellow<br>
+              University of Glasgow
+            </p>
+
+          </div>
+
+
+        </div>
 
       </div>
-
 
     </section>
 
@@ -1007,19 +1401,15 @@
        FOOTER
        ========================================================== -->
 
-
   <footer class="footer">
-
 
     <div>
       César Pablo Domínguez Prieto
     </div>
 
-
     <div>
       Comparative Literature · World Literature · Applied Humanities
     </div>
-
 
   </footer>
 
