@@ -3,9 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>César Pablo Domínguez Prieto</title>
+  <title>César Pablo Domínguez Prieto — English</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       background: #f7f5f0;
@@ -13,10 +17,18 @@
       font-family: Arial, Helvetica, sans-serif;
     }
 
-    header {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 32px 40px 20px;
+    a {
+      color: inherit;
+    }
+
+    .site-header {
+      width: 100%;
+      padding: 28px 5vw 22px;
+      border-bottom: 1px solid #d8d4cc;
+      background: #f7f5f0;
+    }
+
+    .header-top {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
@@ -26,75 +38,168 @@
     .identity h1 {
       margin: 0 0 8px;
       font-family: Georgia, "Times New Roman", serif;
-      font-size: 2rem;
+      font-size: clamp(1.8rem, 3vw, 2.7rem);
       font-weight: 400;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
     }
 
     .identity p {
       margin: 0;
-      font-size: 0.85rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    .language {
-      font-size: 0.8rem;
+      font-size: 0.76rem;
+      line-height: 1.4;
       letter-spacing: 0.12em;
       text-transform: uppercase;
     }
 
-    .language a {
-      color: #222;
+    .language-switch {
+      padding-top: 4px;
+      font-size: 0.76rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .language-switch a {
       text-decoration: none;
     }
 
-    nav {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px 40px;
-      border-top: 1px solid #d8d4cc;
-      border-bottom: 1px solid #d8d4cc;
+    .language-switch a:hover {
+      text-decoration: underline;
     }
 
-    nav a {
-      margin-right: 28px;
-      color: #222;
+    .main-nav {
+      margin-top: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+
+    .main-nav a {
       text-decoration: none;
-      font-size: 0.9rem;
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
     }
 
-    main {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 80px 40px;
+    .main-nav a:hover {
+      text-decoration: underline;
     }
 
     .hero {
-      max-width: 760px;
+      display: grid;
+      grid-template-columns: 44% 56%;
+      min-height: 72vh;
+    }
+
+    .hero-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 7vw 5vw 7vw 7vw;
+    }
+
+    .hero-kicker {
+      margin-bottom: 18px;
+      font-size: 0.76rem;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
     }
 
     .hero h2 {
-      margin: 0 0 24px;
+      margin: 0 0 30px;
       font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(2.6rem, 5vw, 5rem);
+      font-size: clamp(2.8rem, 4.3vw, 5rem);
       font-weight: 400;
-      line-height: 1.05;
+      line-height: 1.03;
+      letter-spacing: -0.025em;
     }
 
     .hero p {
       max-width: 650px;
-      font-size: 1.15rem;
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.12rem;
       line-height: 1.7;
     }
 
-    @media (max-width: 700px) {
-      header {
+    .hero-image {
+      min-height: 72vh;
+      overflow: hidden;
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: center;
+      filter: grayscale(100%);
+    }
+
+    .section {
+      padding: 90px 7vw;
+      border-top: 1px solid #d8d4cc;
+    }
+
+    .section-inner {
+      max-width: 1050px;
+    }
+
+    .section-label {
+      margin-bottom: 20px;
+      font-size: 0.76rem;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .section h3 {
+      margin: 0 0 28px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2.2rem, 3.5vw, 4rem);
+      font-weight: 400;
+      line-height: 1.06;
+    }
+
+    .section p {
+      max-width: 760px;
+      margin: 0 0 18px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.08rem;
+      line-height: 1.75;
+    }
+
+    .footer {
+      padding: 36px 7vw 50px;
+      border-top: 1px solid #d8d4cc;
+      font-size: 0.76rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 900px) {
+      .header-top {
         flex-direction: column;
       }
 
-      nav a {
-        display: inline-block;
-        margin-bottom: 12px;
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-text {
+        padding: 60px 28px 48px;
+      }
+
+      .hero-image {
+        min-height: 55vh;
+      }
+
+      .main-nav {
+        gap: 16px;
+      }
+
+      .section {
+        padding: 70px 28px;
       }
     }
   </style>
@@ -102,36 +207,158 @@
 
 <body>
 
-  <header>
-    <div class="identity">
-      <h1>César Pablo Domínguez Prieto</h1>
-      <p>Comparative Literature · World Literature · Applied Humanities</p>
+  <header class="site-header">
+
+    <div class="header-top">
+
+      <div class="identity">
+        <h1>César Pablo Domínguez Prieto</h1>
+        <p>Comparative Literature · World Literature · Applied Humanities</p>
+      </div>
+
+      <div class="language-switch">
+        <a href="../gl/">GAL</a> · EN
+      </div>
+
     </div>
 
-    <div class="language">
-      <a href="../gl/">GAL</a> · EN
-    </div>
+    <nav class="main-nav">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
   </header>
 
-  <nav>
-    <a href="#">About</a>
-    <a href="#">Research</a>
-    <a href="#">Publications</a>
-    <a href="#">Projects</a>
-    <a href="#">Teaching</a>
-    <a href="#">Contact</a>
-  </nav>
-
   <main>
-    <section class="hero">
-      <h2>Comparative literature across texts, worlds and cultural practices.</h2>
 
-      <p>
-        Research in comparative and world literature, translation, cultural memory,
-        environmental humanities and applied humanities.
-      </p>
+    <section class="hero" id="about">
+
+      <div class="hero-text">
+
+        <div class="hero-kicker">
+          Comparative Literature · World Literature · Applied Humanities
+        </div>
+
+        <h2>
+          Literature across languages, cultures and forms of knowledge.
+        </h2>
+
+        <p>
+          I work in comparative and world literature, with particular interests
+          in translation, cultural memory, environmental humanities and the
+          applied dimensions of literary research.
+        </p>
+
+      </div>
+
+      <div class="hero-image">
+        <img src="../home-reading.jpeg" alt="">
+      </div>
+
     </section>
+
+    <section class="section" id="research">
+      <div class="section-inner">
+
+        <div class="section-label">Research</div>
+
+        <h3>
+          Comparative research across texts, territories and cultural systems.
+        </h3>
+
+        <p>
+          My research examines literary circulation, translation, world literature,
+          cultural memory and the relationship between literature and place.
+        </p>
+
+        <p>
+          I am particularly interested in comparative methods that connect
+          textual analysis with cartography, digital approaches and public-facing
+          forms of humanities research.
+        </p>
+
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-inner">
+
+        <div class="section-label">Projects</div>
+
+        <h3>
+          Current research and applied humanities projects.
+        </h3>
+
+        <p>
+          This section will present current projects, collaborative initiatives
+          and experimental work in literary cartography, cultural memory,
+          digital humanities and public engagement.
+        </p>
+
+      </div>
+    </section>
+
+    <section class="section" id="publications">
+      <div class="section-inner">
+
+        <div class="section-label">Publications</div>
+
+        <h3>
+          Books, edited volumes, articles and selected publications.
+        </h3>
+
+        <p>
+          A curated selection of publications will appear here, with links to
+          full bibliographic information and available digital versions.
+        </p>
+
+      </div>
+    </section>
+
+    <section class="section" id="teaching">
+      <div class="section-inner">
+
+        <div class="section-label">Teaching</div>
+
+        <h3>
+          Teaching comparative literature across methods, periods and media.
+        </h3>
+
+        <p>
+          This section will include current teaching, programme responsibilities
+          and selected materials related to literary theory and comparative
+          literature.
+        </p>
+
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="section-inner">
+
+        <div class="section-label">Contact</div>
+
+        <h3>
+          Academic contact and institutional affiliations.
+        </h3>
+
+        <p>
+          Contact details, institutional profiles and academic networks will be
+          added here.
+        </p>
+
+      </div>
+    </section>
+
   </main>
+
+  <footer class="footer">
+    César Pablo Domínguez Prieto
+  </footer>
 
 </body>
 </html>
