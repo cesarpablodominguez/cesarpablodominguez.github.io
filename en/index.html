@@ -3,11 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>César Pablo Domínguez Prieto — English</title>
 
   <style>
+
     * {
       box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -21,9 +27,14 @@
       color: inherit;
     }
 
+
+    /* =========================
+       HEADER
+       ========================= */
+
     .site-header {
       width: 100%;
-      padding: 28px 5vw 22px;
+      padding: 22px 4.4vw 20px;
       border-bottom: 1px solid #d8d4cc;
       background: #f7f5f0;
     }
@@ -36,9 +47,9 @@
     }
 
     .identity h1 {
-      margin: 0 0 8px;
+      margin: 0 0 7px;
       font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(1.8rem, 3vw, 2.7rem);
+      font-size: clamp(1.8rem, 2.25vw, 2.65rem);
       font-weight: 400;
       line-height: 1.05;
       letter-spacing: -0.02em;
@@ -46,15 +57,15 @@
 
     .identity p {
       margin: 0;
-      font-size: 0.76rem;
+      font-size: 0.72rem;
       line-height: 1.4;
       letter-spacing: 0.12em;
       text-transform: uppercase;
     }
 
     .language-switch {
-      padding-top: 4px;
-      font-size: 0.76rem;
+      padding-top: 3px;
+      font-size: 0.72rem;
       letter-spacing: 0.14em;
       text-transform: uppercase;
       white-space: nowrap;
@@ -68,16 +79,21 @@
       text-decoration: underline;
     }
 
+
+    /* =========================
+       NAVIGATION
+       ========================= */
+
     .main-nav {
-      margin-top: 24px;
+      margin-top: 23px;
       display: flex;
       flex-wrap: wrap;
-      gap: 24px;
+      gap: 25px;
     }
 
     .main-nav a {
       text-decoration: none;
-      font-size: 0.82rem;
+      font-size: 0.78rem;
       letter-spacing: 0.08em;
       text-transform: uppercase;
     }
@@ -86,45 +102,46 @@
       text-decoration: underline;
     }
 
+
+    /* =========================
+       HERO / ABOUT
+       ========================= */
+
     .hero {
       display: grid;
       grid-template-columns: 44% 56%;
-      min-height: 72vh;
+      min-height: 650px;
+      height: calc(100vh - 143px);
+      max-height: 780px;
     }
 
     .hero-text {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 7vw 5vw 7vw 7vw;
-    }
-
-    .hero-kicker {
-      margin-bottom: 18px;
-      font-size: 0.76rem;
-      letter-spacing: 0.13em;
-      text-transform: uppercase;
+      padding: 5vw 5.2vw 5vw 6.4vw;
     }
 
     .hero h2 {
       margin: 0 0 30px;
+      max-width: 620px;
       font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(2.8rem, 4.3vw, 5rem);
+      font-size: clamp(3rem, 4vw, 4.6rem);
       font-weight: 400;
       line-height: 1.03;
-      letter-spacing: -0.025em;
+      letter-spacing: -0.028em;
     }
 
-    .hero p {
-      max-width: 650px;
+    .hero-intro {
+      max-width: 590px;
       margin: 0;
       font-family: Georgia, "Times New Roman", serif;
-      font-size: 1.12rem;
-      line-height: 1.7;
+      font-size: clamp(1rem, 1.05vw, 1.18rem);
+      line-height: 1.68;
     }
 
     .hero-image {
-      min-height: 72vh;
+      height: 100%;
       overflow: hidden;
     }
 
@@ -136,6 +153,11 @@
       object-position: center;
       filter: grayscale(100%);
     }
+
+
+    /* =========================
+       CONTENT SECTIONS
+       ========================= */
 
     .section {
       padding: 90px 7vw;
@@ -155,10 +177,12 @@
 
     .section h3 {
       margin: 0 0 28px;
+      max-width: 850px;
       font-family: Georgia, "Times New Roman", serif;
       font-size: clamp(2.2rem, 3.5vw, 4rem);
       font-weight: 400;
       line-height: 1.06;
+      letter-spacing: -0.02em;
     }
 
     .section p {
@@ -169,6 +193,11 @@
       line-height: 1.75;
     }
 
+
+    /* =========================
+       FOOTER
+       ========================= */
+
     .footer {
       padding: 36px 7vw 50px;
       border-top: 1px solid #d8d4cc;
@@ -177,33 +206,110 @@
       text-transform: uppercase;
     }
 
+
+    /* =========================
+       TABLET / MOBILE
+       ========================= */
+
     @media (max-width: 900px) {
+
+      .site-header {
+        padding: 24px 28px 20px;
+      }
+
       .header-top {
         flex-direction: column;
+        gap: 18px;
+      }
+
+      .identity h1 {
+        font-size: clamp(1.9rem, 7vw, 2.6rem);
+      }
+
+      .identity p {
+        font-size: 0.68rem;
+        line-height: 1.55;
+      }
+
+      .language-switch {
+        position: absolute;
+        top: 27px;
+        right: 28px;
+      }
+
+      .main-nav {
+        margin-top: 22px;
+        gap: 15px 20px;
       }
 
       .hero {
         grid-template-columns: 1fr;
+        height: auto;
+        max-height: none;
       }
 
       .hero-text {
-        padding: 60px 28px 48px;
+        padding: 70px 28px 60px;
+      }
+
+      .hero h2 {
+        font-size: clamp(2.8rem, 10vw, 4.4rem);
+      }
+
+      .hero-intro {
+        font-size: 1.05rem;
       }
 
       .hero-image {
-        min-height: 55vh;
-      }
-
-      .main-nav {
-        gap: 16px;
+        height: 65vh;
+        min-height: 420px;
       }
 
       .section {
         padding: 70px 28px;
       }
+
+      .footer {
+        padding: 32px 28px 45px;
+      }
     }
+
+
+    @media (max-width: 560px) {
+
+      .identity h1 {
+        max-width: 280px;
+      }
+
+      .identity p {
+        max-width: 300px;
+      }
+
+      .main-nav {
+        gap: 13px 18px;
+      }
+
+      .main-nav a {
+        font-size: 0.72rem;
+      }
+
+      .hero-text {
+        padding-top: 58px;
+      }
+
+      .hero h2 {
+        margin-bottom: 25px;
+      }
+
+      .hero-image {
+        height: 55vh;
+        min-height: 360px;
+      }
+    }
+
   </style>
 </head>
+
 
 <body>
 
@@ -212,8 +318,15 @@
     <div class="header-top">
 
       <div class="identity">
-        <h1>César Pablo Domínguez Prieto</h1>
-        <p>Comparative Literature · World Literature · Applied Humanities</p>
+
+        <h1>
+          César Pablo Domínguez Prieto
+        </h1>
+
+        <p>
+          Comparative Literature · World Literature · Applied Humanities
+        </p>
+
       </div>
 
       <div class="language-switch">
@@ -222,72 +335,102 @@
 
     </div>
 
+
     <nav class="main-nav">
+
       <a href="#about">About</a>
+
       <a href="#research">Research</a>
+
       <a href="#projects">Projects</a>
+
       <a href="#publications">Publications</a>
+
       <a href="#teaching">Teaching</a>
+
       <a href="#contact">Contact</a>
+
     </nav>
 
   </header>
 
+
   <main>
+
+
+    <!-- ABOUT / HERO -->
 
     <section class="hero" id="about">
 
       <div class="hero-text">
 
-        <div class="hero-kicker">
-          Comparative Literature · World Literature · Applied Humanities
-        </div>
-
         <h2>
-          Literature across languages, cultures and forms of knowledge.
+          Comparative literature across languages, cultures and worlds.
         </h2>
 
-        <p>
-          I work in comparative and world literature, with particular interests
-          in translation, cultural memory, environmental humanities and the
-          applied dimensions of literary research.
+        <p class="hero-intro">
+          I am a scholar of comparative and world literature, with particular
+          interests in translation, cultural memory, environmental humanities
+          and the applied dimensions of literary research.
         </p>
 
       </div>
 
+
       <div class="hero-image">
-        <img src="../home-reading.jpeg" alt="">
+
+        <img
+          src="../home-reading.jpeg"
+          alt="César Pablo Domínguez Prieto reading"
+        >
+
       </div>
 
     </section>
 
+
+
+    <!-- RESEARCH -->
+
     <section class="section" id="research">
+
       <div class="section-inner">
 
-        <div class="section-label">Research</div>
+        <div class="section-label">
+          Research
+        </div>
 
         <h3>
           Comparative research across texts, territories and cultural systems.
         </h3>
 
         <p>
-          My research examines literary circulation, translation, world literature,
-          cultural memory and the relationship between literature and place.
+          My research examines literary circulation, translation, world
+          literature, cultural memory and the relationship between literature
+          and place.
         </p>
 
         <p>
           I am particularly interested in comparative methods that connect
-          textual analysis with cartography, digital approaches and public-facing
-          forms of humanities research.
+          textual analysis with cartography, digital approaches and
+          public-facing forms of humanities research.
         </p>
 
       </div>
+
     </section>
 
+
+
+    <!-- PROJECTS -->
+
     <section class="section" id="projects">
+
       <div class="section-inner">
 
-        <div class="section-label">Projects</div>
+        <div class="section-label">
+          Projects
+        </div>
 
         <h3>
           Current research and applied humanities projects.
@@ -300,12 +443,20 @@
         </p>
 
       </div>
+
     </section>
 
+
+
+    <!-- PUBLICATIONS -->
+
     <section class="section" id="publications">
+
       <div class="section-inner">
 
-        <div class="section-label">Publications</div>
+        <div class="section-label">
+          Publications
+        </div>
 
         <h3>
           Books, edited volumes, articles and selected publications.
@@ -317,48 +468,68 @@
         </p>
 
       </div>
+
     </section>
 
+
+
+    <!-- TEACHING -->
+
     <section class="section" id="teaching">
+
       <div class="section-inner">
 
-        <div class="section-label">Teaching</div>
+        <div class="section-label">
+          Teaching
+        </div>
 
         <h3>
           Teaching comparative literature across methods, periods and media.
         </h3>
 
         <p>
-          This section will include current teaching, programme responsibilities
-          and selected materials related to literary theory and comparative
-          literature.
+          This section will include current teaching, programme
+          responsibilities and selected materials related to literary theory
+          and comparative literature.
         </p>
 
       </div>
+
     </section>
 
+
+
+    <!-- CONTACT -->
+
     <section class="section" id="contact">
+
       <div class="section-inner">
 
-        <div class="section-label">Contact</div>
+        <div class="section-label">
+          Contact
+        </div>
 
         <h3>
           Academic contact and institutional affiliations.
         </h3>
 
         <p>
-          Contact details, institutional profiles and academic networks will be
-          added here.
+          Contact details, institutional profiles and academic networks will
+          be added here.
         </p>
 
       </div>
+
     </section>
 
+
   </main>
+
 
   <footer class="footer">
     César Pablo Domínguez Prieto
   </footer>
+
 
 </body>
 </html>
